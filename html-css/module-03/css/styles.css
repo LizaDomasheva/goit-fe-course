@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 901px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -36,16 +36,12 @@ body {
     display: inline-block;
 }
 
-.lifestyle {
-    margin-right: 124px;
+.site-navigation-item {
+    margin-right: 108px;
 }
 
-.photodiary {
-    margin-right: 105px;
-}
-
-.music {
-    margin-right: 97px;
+.site-navigation-item:nth-last-of-type(1) {
+    margin: 0;
 }
 
 .site-navigation a {
@@ -58,13 +54,9 @@ body {
     line-height: 24px;
 }
 
-.lifestyle a {
-    color: #03a9f4;
-}
-
-.site-navigation a:hover,
+.site-navigation a:hover, 
 .site-navigation a:focus {
-    color: tomato;
+    color: #03a9f4;
 }
 
 /* articles */
@@ -79,7 +71,7 @@ body {
 .article {
     display: inline-block;
     width: 420px;
-    margin-right: 61px;
+    margin-right: 60px;
     margin-bottom: 131px;
     text-align: left;
 }
@@ -100,6 +92,7 @@ img {
 }
 
 .article-section {
+    margin: 0;
     margin-bottom: 28px;
     color: #b4ad9e;
     line-height: 17px;
@@ -108,6 +101,7 @@ img {
 }
 
 .article h3 {
+    margin: 0;
     margin-bottom: 34px;
     color: #626262;
     line-height: 36px;
@@ -116,6 +110,7 @@ img {
 }
 
 .article-content {
+    margin: 0;
     color: #626262;
     line-height: 24px;
     font-size: 14px;
@@ -125,17 +120,19 @@ button {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 70px;
     border: 1px solid rgb(98, 98, 98);
     padding: 20px 34px;
     background-color: #fff;
     font-size: 20px;
     text-align: center;
     color: #626262;
-
 }
 
 button:hover {
     background-color: tomato;
     color: white;
+}
+
+.articles {
+    padding-bottom: 70px;
 }
