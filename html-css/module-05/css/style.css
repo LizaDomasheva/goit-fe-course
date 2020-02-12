@@ -178,10 +178,9 @@ a {
     width: 104px;
     height: 104px;
     border: none;
-    background-color: ;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(78, 198, 171, 0);
+    background-color: transparent;
     cursor: pointer;
   }
 
