@@ -65,7 +65,6 @@ a {
 
 .site-navigation {
     float: right;
-    width: 476px;
     margin: 0;
     margin-top: 12px;
     padding: 0;
@@ -122,9 +121,8 @@ a {
 }
 
 .slider-image {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 
 .slider-text {
@@ -132,9 +130,10 @@ a {
     display: inline-block;
     margin: 0;
     padding: 0;
-    top: 209px;
+    width: 738px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: white;
     font-family: Roboto, serif;
     text-transform: uppercase;
@@ -148,11 +147,9 @@ a {
     line-height: 82px;
     letter-spacing: -1.2px;
     text-transform: uppercase;
-    z-index: 4;
 }
 
 .slider-title-info {
-    top: 282px;
     text-align: left;
     font-size: 24px;
     font-weight: 300;
@@ -161,34 +158,29 @@ a {
 }
 
 .slider-container {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
-.slider-container {
-    position: absolute;
-    width: 1110px;
-    top: 225px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-  }
-
-  .slider-button {
+.slider-button {
     display: block;
     width: 104px;
     height: 104px;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: rgb(26, 188, 156);
     cursor: pointer;
-  }
+}
 
 .slider-button:hover,
 .slider-button:focus {
-    background-color: #1abc9c;
+    background-color: rgba(26, 188, 156, 0.651);
 }
-
+  
 .slider-button-prev {
     float: left;
     background-image: url("../img/slider/button-prev.png");
@@ -236,8 +228,6 @@ a {
 .info-card {
     margin: 0;
     padding: 0;
-    width: 255px;
-    height: 40px;
     font-family: "Roboto", serif;
     color: #ffffff;
     background-color: #323232;
@@ -251,16 +241,16 @@ a {
 .name {
     float: left;
     width: 201px;
-    height: 100%;
     padding-top: 4px;
+    padding-bottom: 4px;
     text-indent: 14px;
 }
 
 .price {
     float: left;
     width: 54px;
-    height: 100%;
     padding-top: 4px;
+    padding-bottom: 4px;
     text-align: center;
     color: #ffffff;
     background-color: rgba(255, 255, 255, .439);
@@ -286,15 +276,22 @@ a {
     color: #ffffff;
 }
 
-.overlay {
-    position: absolute;
-    top: 12px;
-    left: 10px;
-    width: 235px;
-    height: 261px;
-    background-color: rgba(0, 0, 0, 0.549);
-    visibility: hidden;
+.image-and-overlay {
+    position: relative;
 }
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.549);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+  }
 
 .product-list-item:hover .overlay {
     opacity: 1;
@@ -371,11 +368,14 @@ a {
 .page-footer {
     width: 100%;
     background-color: #323232;
+    text-align: center;
 }
 
+/* Footer */
+
 .footer-text {
+    display: inline-block;
     padding: 30px 0;
-    text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 28px;
@@ -384,6 +384,7 @@ a {
     color: #fefefe;
 }
 
-.special {
+.footer-text-link {
     color: #46bfa9;
+    cursor: pointer;
 }
