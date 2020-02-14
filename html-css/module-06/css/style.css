@@ -82,13 +82,13 @@ a {
     width: 0%;
     background-color: var(--red-text-color);
     visibility: hidden;
+    transition: width 200ms linear 100ms;
 }
 
 .site-navigation-item a:hover,
 .site-navigation-item a:hover::after {
     color: var(--red-text-color);
     visibility: visible;
-    transition: width 200ms linear 100ms;
     width: 100%;
 }
 
@@ -289,6 +289,9 @@ a {
     height: 470px;
     top: 0;
     left: 0;
+    transition-property: top, left, opacity;
+    transition-duration: 200ms, 200ms, 200ms;
+    transition-timing-function: linear;
 }
 
 .overlay {
@@ -300,6 +303,9 @@ a {
     background: linear-gradient(to top, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
     opacity: 0;
     visibility: hidden;
+    transition-property: top, left, opacity;
+    transition-duration: 200ms, 200ms, 200ms;
+    transition-timing-function: linear;
 }
 
 .social-list {
@@ -316,6 +322,7 @@ a {
     background-color: rgb(252, 227, 138);
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 200ms linear 200ms;
 }
 
 .social-item-link {
@@ -341,9 +348,6 @@ a {
 }
 
 .card-wrapper:hover .overlay {
-    transition-property: top, left, opacity;
-    transition-duration: 200ms, 200ms, 200ms;
-    transition-timing-function: linear;
     top: -10px;
     left: -10px;
     opacity: 0.9;
@@ -351,15 +355,11 @@ a {
 }
 
 .card-wrapper:hover .member-photo {
-    transition-property: top, left;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
     top: -10px;
     left: -10px;
 }
 
 .social-list-item:hover {
-    transition: background-color 200ms linear 200ms;
     background-color: var(--green-text-color);
 }
 
