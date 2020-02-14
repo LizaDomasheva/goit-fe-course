@@ -105,12 +105,6 @@ a {
     color: #333333;
 }
 
-.top-text {
-    padding-bottom: 18px;
-    font-family: "Kaushan Script", cursive;
-    font-size: 24px;
-    line-height: 30px;
-}
 
 .title {
     font-family: "Montserrat", sans-serif;
@@ -118,6 +112,16 @@ a {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.top-text {
+    display: block;
+    margin-bottom: 18px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: none;
+    font-weight: 400;
 }
 
 .title::after {
@@ -300,7 +304,7 @@ a {
     height: 470px;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     opacity: 0;
     visibility: hidden;
     transition-property: top, left, opacity;
@@ -350,7 +354,7 @@ a {
 .card-wrapper:hover .overlay {
     top: -10px;
     left: -10px;
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
 }
 
