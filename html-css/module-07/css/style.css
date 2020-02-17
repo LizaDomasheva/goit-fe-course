@@ -265,7 +265,7 @@ a {
 }
 
 .form-list-item:not(:last-child) {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .form-placeholder {
