@@ -223,7 +223,7 @@ a {
 .about-team {
     margin: 0 auto;
     margin-bottom: 96px;
-    width: 980px;
+    max-width: 980px;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
