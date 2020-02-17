@@ -286,20 +286,17 @@ a {
     resize: none;
 }
 
-.footer-form input[name='user_name']:valid,
-.footer-form input[name='user_e-mail']:valid,
-.footer-form textarea[name='user_message']:valid {
+.form-placeholder:required:focus:valid {
     border-color: green;
 }
 
-.footer-form input[name='user_name']:invalid,
-.footer-form input[name='user_e-mail']:invalid,
-.footer-form textarea[name='user_message']:invalid {
-    border-color: red;
+.form-placeholder:required:focus:invalid {
+    border-color: red
 }
 
 .form-placeholder:focus {
     outline: 0;
+    outline-offset: 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
