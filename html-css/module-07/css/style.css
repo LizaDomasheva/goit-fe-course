@@ -91,9 +91,11 @@ a {
     font-style: normal;
     font-weight: 400;
     src: local('Parisienne'), local('Parisienne-Regular'),
-         url('../fonts/parisienne-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/parisienne-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+        url('../fonts/parisienne-v7-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/parisienne-v7-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* Header */
 
@@ -284,6 +286,7 @@ a {
     border-radius: 5px;
     width: 459px;
     resize: none;
+    padding-top: 15px;
 }
 
 .form-placeholder:required:focus:valid {
@@ -297,8 +300,6 @@ a {
 .form-placeholder:focus {
     outline: 0;
     outline-offset: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .form-placeholder::placeholder {
@@ -310,10 +311,6 @@ a {
     line-height: 1.2;
     letter-spacing: -0.35px;
     text-indent: 20px;
-}
-
-.form-textarea::placeholder {
-    padding-top: 20px;
 }
 
 .footer-button {
