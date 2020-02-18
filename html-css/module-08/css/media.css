@@ -1,0 +1,117 @@
+@media (min-width:748px) {
+    .container {
+        width: 748px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        background-image: url(../img/tablet-background.jpg);
+        padding-bottom: 234px;
+    }
+
+    .header-button {
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-navigation {
+        display: flex;
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-bottom: 120px;
+        width: 670px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .header-content {
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+
+    .header-title {
+        margin: 0;
+        margin-bottom: 32px;
+        font-size: 52px;
+        text-transform: uppercase;
+    }
+
+    .header-title-text {
+        font-size: 24px;
+        margin-bottom: 38px;
+    }
+
+    .meet-partner {
+        padding-bottom: 40px;
+    }
+
+    .meet-partner-title {
+        margin-bottom: 35px;
+    }
+
+    .partner-list {
+        display: flex;
+        padding-bottom: 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 492px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .partner-list-item-second {
+        order: 1;
+    }
+
+    .partner-list-item-fourth {
+        order: 2;
+    }
+
+    .partner-list-item {
+        width: 230px;
+    }
+
+    .partner-list-item {
+        margin-bottom: 0;
+    }
+
+    .partner-list-item:not(:nth-last-child(1)) {
+        margin-bottom: 0;
+    }
+
+    .partner-list-item:not(:nth-child(2n)) {
+        margin-bottom: 58px;
+    }
+
+    .partner-name {
+        margin-bottom: 20px;
+    }
+}
+
+    @media (min-width:940px) {
+        .container {
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        .page-navigation {
+            width: 940px;
+        }
+
+        .page-header {
+            background-image: url(../img/desktop-background.jpg);
+        }
+
+        .partner-list-item:not(:nth-child(2n)) {
+            margin-bottom: 0px;
+        } 
+       
+        .partner-list {
+            width: 940px;
+        }
+    }
