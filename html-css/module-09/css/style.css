@@ -1,0 +1,303 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* 
+
+/* Header */
+
+.page-header {
+    background-image: url(../img/mobile-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 8.625rem;
+}
+
+.page-navigation {
+    padding-top: 2.125rem;
+    margin-bottom: 2.1875rem;
+}
+
+.header-button {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 7.5rem;
+}
+
+.button {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    line-height: 2rem;
+}
+
+.button:hover {
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    background-color: rgba(26, 25, 21, 0);
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.header-title {
+    margin-bottom: 1.125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -0.0531rem;
+}
+
+.header-title-text {
+    margin-bottom: 1.25rem;
+    padding: 0 1.875rem;
+    font-size: 1.125rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+    opacity: 0.8;
+}
+
+.find-purtner-link {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--main-color);
+    font-weight: bold;
+    line-height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 17.625rem;
+}
+
+.find-purtner-link:hover {
+    background-color: var(--main-color);
+    color: rgb(255, 78, 80);
+}
+
+/* Meet partner */
+
+.meet-partner {
+    padding-bottom: 3.5rem;
+}
+
+.meet-partner-title {
+    margin-bottom: 1.125rem;
+    padding-top: 4.5rem;
+    font-size: 1.375rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.partner-list { 
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.4375rem;
+}
+
+.image-wraper {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1.3125rem;
+    width: 7.5625rem;
+    height: 7.5625rem;
+}
+
+.image-wraper::after {
+    position: absolute;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    bottom: 0;
+    right: 0;
+    content: "";
+}
+
+.image-wraper-first::after {
+    background-color: rgb(255, 78, 80);
+    background-image: url(../img/icon/tv.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.image-wraper-second::after {
+    background-color: rgb(255, 165, 7);
+    background-image: url(../img/icon/bottle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.image-wraper-third::after {
+    background-color: rgb(28, 215, 173);
+    background-image: url(../img/icon/cup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.image-wraper-fourth::after {
+    background-color: rgb(78, 115, 219);
+    background-image: url(../img/icon/plane.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.partner-name {
+    margin-bottom: 0.6875rem;
+    font-size: 0.875rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.about-partner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 0.875rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(102, 102, 102);
+    font-weight: 300;
+}
+
+.other-partner {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    line-height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 17.625rem;
+}
+
+.other-partner:hover {
+    background-color: rgb(255, 78, 80);
+    color: var(--main-color);
+}
+
+.pb {
+    padding-bottom: 3.5rem;
+}

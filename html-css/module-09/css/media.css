@@ -1,0 +1,73 @@
+@media (max-width:767px) {
+    .partner-list-item:not(:nth-last-child(1)) {
+        margin-bottom: 1.4375rem;
+    }
+}
+
+@media (min-width:768px) {
+    .page-header {
+        background-image: url(../img/tablet-background.jpg);
+        padding-bottom: 14.625rem;
+    }
+
+    .page-navigation {
+        padding-top: 3rem;
+        margin-bottom: 9.875rem;
+    }
+
+    .header-button {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-title {
+        margin-bottom: 2rem;
+        font-size: 3.25rem;
+    }
+
+    .header-title-text {
+        font-size: 1.5rem;
+        margin-bottom: 2.375rem;
+    }
+
+    .meet-partner {
+        padding-bottom: 2.5rem;
+    }
+
+    .meet-partner-title {
+        margin-bottom: 2.1875rem;
+    }
+
+    .partner-list {
+        display: flex;
+        padding-bottom: 2.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pd-md {
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .partner-list-item:not(:nth-child(2n)) {
+        margin-bottom: 3.625rem;
+    }
+}
+
+@media (min-width:992px) {
+    .page-header {
+        background-image: url(../img/desktop-background.jpg);
+    }
+
+    .partner-list-item:not(:nth-child(2n)) {
+        margin-bottom: 0rem;
+    } 
+   
+    .partner-list {
+        width: 58.75rem;
+    }
+}
