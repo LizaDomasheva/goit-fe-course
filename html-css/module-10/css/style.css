@@ -352,32 +352,32 @@ a {
 }
 
 .services-list__item--alarm::before {
-    background-image: url(../img/icons/alarm.svg);
+    background-image: url(../img/icons/ALARM.svg);
     content: "";
 }
 
 .services-list__item--graph::before {
-    background-image: url(../img/icons/graph.svg);
+    background-image: url(../img/icons/GRAPH.svg);
     content: "";
 }
 
 .services-list__item--computer::before {
-    background-image: url(../img/icons/computer.svg);
+    background-image: url(../img/icons/COMPUTER.svg);
     content: "";
 }
 
 .services-list__item--book::before {
-    background-image: url(../img/icons/book.svg);
+    background-image: url(../img/icons/BOOK.svg;
     content: "";
 }
 
 .services-list__item--home::before {
-    background-image: url(../img/icons/home.svg);
+    background-image: url(../img/icons/HOME.svg);
     content: "";
 }
 
 .services-list__item--image::before {
-    background-image: url(../img/icons/image.svg);
+    background-image: url(../img/icons/IMAGE.svg);
     content: "";
 }
 
