@@ -367,7 +367,7 @@ a {
 }
 
 .services-list__item--book::before {
-    background-image: url(../img/icons/BOOK.svg;
+    background-image: url(../img/icons/BOOK.svg);
     content: "";
 }
 
