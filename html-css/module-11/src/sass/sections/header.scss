@@ -1,0 +1,132 @@
+.header {
+  padding-bottom: 230px;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/main-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__subtitle {
+    @include font-settings ($size:72px);
+    margin-bottom: 42px;
+    text-align: center;
+    color: $white-color;
+    font-family: $first-font-family;
+  }
+
+  &__title {
+    @include font-settings ($size:150px, $height:140px, $weight:700);
+    margin: 0 auto;
+    margin-bottom: 125px;
+    width: 978px;
+    text-align: center;
+    color: $white-color;
+    font-family: $second-font-family;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    @include font-settings ($height:44px, $weight:700);
+    display: block;
+    color: $white-color;
+    border: 3px solid $white-color;
+    font-family: $second-font-family;
+    text-transform: uppercase;
+    width: 164px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+}
+
+.navigation {
+  @include center-flex ("all");
+  margin-bottom: 134px;
+  min-height: 94px;
+}
+
+.logo {
+  @include font-settings ($size:30px, $weight:700);
+  color: $white-color;
+  font-family: $second-font-family;
+  width: 580px;
+}
+
+.nav-list {
+  display: flex;
+  padding-top: 13px;
+  width: 490px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  &__link {
+    @include font-settings ();
+    display: block;
+    color: $white-color;
+    font-family: $second-font-family;
+    text-transform: uppercase;
+
+    &::after {
+      @include pseudo ();
+      margin-top: 12px;
+      height: 3px;
+      width: 0%;
+      background-color: $yellow-text-color;
+      visibility: hidden;
+      -webkit-transition: width 200ms linear 100ms;
+      -o-transition: width 200ms linear 100ms;
+      transition: width 200ms linear 100ms;
+    }
+
+    &:hover,
+    &:hover::after {
+      color: $yellow-text-color;
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+
+.nav-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 13px;
+  width: 85px;
+  justify-content: space-between;
+
+  &__link::after {
+    @include pseudo ();
+    margin-top: 12px;
+    height: 3px;
+    width: 0%;
+    background-color: $yellow-text-color;
+    visibility: hidden;
+    -webkit-transition: width 200ms linear 100ms;
+    -o-transition: width 200ms linear 100ms;
+    transition: width 200ms linear 100ms;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 36px;
+    fill: $white-color;
+  }
+
+  &__link:hover .nav-icon__icon {
+    fill: $yellow-text-color;
+  }
+
+  &__link:hover::after {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/main-img@2x.jpg);
+  }
+}

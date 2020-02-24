@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  min-height: 62px;
+  justify-content: space-between;
+  align-items: center;
+
+  &-information {
+    @include font-settings ();
+    width: 300px;
+    font-family: $second-font-family;
+    color: #333333;
+  }
+
+  &-developer {
+    color: $main-red-color;
+    cursor: pointer;
+  }
+}
+
+.first-input {
+  @include font-settings ();
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgb(231, 231, 231);
+  text-indent: 12px;
+  font-family: $second-font-family;
+  color: rgb(51, 51, 51);
+  outline: none;
+
+  &::placeholder {
+    @include font-settings (15px, 24px, 300);
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    font-family: $third-font-family;
+  }
+}
+
+.second-input {
+  @include font-settings ($weight:700);
+  margin-left: -5px;
+  height: 40px;
+  width: 150px;
+  background: $main-green-color;
+  color: $white-color;
+  border: 0;
+  font-family: $second-font-family;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,92 @@
+.services {
+  padding-top: 46px;
+  padding-bottom: 93px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    &__item {
+      position: relative;
+      display: block;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 392px;
+      flex: 0 0 392px;
+      margin: 0;
+      padding: 0;
+      padding-left: 92px;
+      text-align: left;
+      margin-bottom: 99px;
+
+      &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        position: absolute;
+        @include pseudo ();
+        top: 0;
+        left: 30px;
+        width: 32px;
+        height: 31px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      $icons: alarm, graph, computer, book, home, image;
+
+      @include generate-pseudo-icons($icons, '../images/icons/', 'svg');
+    }
+
+    &__title {
+      @include font-settings($weight:600);
+      margin-bottom: 14px;
+      font-family: $second-font-family;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    &__description {
+      @include font-settings ($size:15px, $height:24px);
+      font-family: $third-font-family;
+      color: #999999;
+    }
+  }
+}
+
+.title-text {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+
+  &__main {
+    @include font-settings (30px, 36px, 700);
+    font-family: $second-font-family;
+    text-transform: uppercase;
+  }
+
+  &__previous {
+    @include font-settings ($size:24px, $height:30px);
+    display: block;
+    margin-bottom: 18px;
+    font-family: $first-font-family;
+    text-transform: none;
+  }
+
+  &::after {
+    @include pseudo ();
+    margin: 0 auto;
+    background-color: $main-red-color;
+    width: 60px;
+    height: 3px;
+  }
+
+  &__services::after {
+    margin-top: 40px;
+    margin-bottom: 65px;
+  }
+}
+

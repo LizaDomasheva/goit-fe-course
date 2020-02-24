@@ -1,0 +1,36 @@
+@mixin font-settings($size:14px, $height:1.2, $weight:400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin pseudo($display: block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+@mixin center-flex($type: "all") {
+  display: flex;
+
+  @if $type=="all" {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $type=="hor" {
+    justify-content: center;
+  }
+
+  @else if $type=="ver" {
+    align-items: center;
+  }
+}
+
+@mixin generate-pseudo-icons ($list, $path, $ext) {
+  @each $icon in $list {
+    &--#{$icon}::before {
+      background-image: url(#{$path}#{$icon}.#{$ext});
+    }
+  }
+}
+

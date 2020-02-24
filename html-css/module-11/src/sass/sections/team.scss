@@ -1,0 +1,152 @@
+.team__description {
+  @include font-settings ($size:15px, $height:24px);
+  margin: 0 auto;
+  margin-bottom: 96px;
+  max-width: 980px;
+  text-align: center;
+  font-family: $third-font-family;
+  color: #999999;
+}
+
+.title-text__team::after {
+  margin-top: 40px;
+  margin-bottom: 44px;
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.team:after {
+  @include pseudo ();
+  margin-bottom: 82px;
+  background-color: rgb(229, 229, 229);
+  width: 1200px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.team-member {
+  width: 380px;
+  text-align: center;
+
+  &__name {
+    @include font-settings ();
+    margin-bottom: 10px;
+    font-family: $second-font-family;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  &__position {
+    @include font-settings (15px, 24px, 300);
+    margin-bottom: 82px;
+    font-family: $third-font-family;
+    font-style: italic;
+    color: #999999;
+  }
+
+}
+
+.team-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+  width: 380px;
+  height: 470px;
+  background-color: $main-green-color;
+
+  &__photo {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: top, left;
+    -o-transition-property: top, left;
+    transition-property: top, left;
+    -webkit-transition-duration: 200ms, 200ms;
+    -o-transition-duration: 200ms, 200ms;
+    transition-duration: 200ms, 200ms;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+
+  &:hover .overlay {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover .team-wrapper__photo {
+    top: -10px;
+    left: -10px;
+  }
+
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-property: top, left, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: top, left, opacity;
+  -webkit-transition-duration: 200ms, 200ms, 200ms;
+  -o-transition-duration: 200ms, 200ms, 200ms;
+  transition-duration: 200ms, 200ms, 200ms;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 224px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  &__item {
+    background-color: $yellow-text-color;
+  }
+
+  &__link {
+    @include center-flex ("all");
+    width: 55px;
+    height: 56px;
+
+    &:hover .social-list__icon {
+      fill: $white-color;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    fill: #f38181;
+  }
+
+}
